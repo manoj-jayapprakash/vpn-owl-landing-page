@@ -6,6 +6,10 @@ Simple landing page with multiple sections developed using mobile first approach
 
 HTML, CSS, JavaScript
 
+### Links
+
+Live url: https://mjcreations-vpn-owl.netlify.app/
+
 ### Screenshot
 
 ![Home](./screenshot.png)

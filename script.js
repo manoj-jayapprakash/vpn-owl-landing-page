@@ -4,6 +4,7 @@ const overlay = document.querySelector('.overlay');
 const greetingMessage = document.querySelector('.greeting__message');
 const greetingMessageCloseIcon = document.querySelector('.greeting__close');
 const mobileView = window.matchMedia('(max-width: 700px)').matches;
+const logo = document.querySelector('.logo');
 
 //Background color change input box
 const bgColorInput = document.querySelector('#bgcolor__input');
@@ -65,6 +66,13 @@ const openMobileNavMenu = () => {
   navMenu.classList.remove('hidden');
 };
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
 //Event Listeners
 
 window.addEventListener('load', renderGreeting);
@@ -77,3 +85,4 @@ if (mobileView) {
 }
 
 hamburger.addEventListener('click', openMobileNavMenu);
+logo.addEventListener('click', scrollToTop);
